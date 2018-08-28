@@ -43,3 +43,5 @@ $ `jsrun -n6 -a1 -c7 -g1 -bpacked:2 ./jsrun_layout verbose | sort`
 * This code uses hard-coded values of the Bus IDs to map GPUs, so it will only work on Summit. You would need to modify the Bus IDs for other systems.
 
 * Only the first 10 characters of the UUID are printed.
+
+* There basic images of Summit and SummitDev nodes to help understand possible node layouts.
