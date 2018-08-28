@@ -144,6 +144,14 @@ int main(int argc, char *argv[]){
 				gpu_id = 4;
 			}else if(strcmp(busid, "0035:05:00.0") == 0){
 				gpu_id = 5;
+      }else if(strcmp(busid, "0002:01:00.0") == 0){
+        gpu_id = 0;
+      }else if(strcmp(busid, "0003:01:00.0") == 0){
+        gpu_id = 1;
+      }else if(strcmp(busid, "0006:01:00.0") == 0){
+        gpu_id = 2;
+      }else if(strcmp(busid, "0007:01:00.0") == 0){
+        gpu_id = 3;
 			}else{
 				printf("The BusID (%s) did not map correctly to a GPU. Exiting...\n", busid);
 				exit(0);
