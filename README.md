@@ -1,7 +1,7 @@
 This is a simple "Hello World" type program that can be used to test the layout of resources on a Summit or SummitDev node using `jsrun`.
 
 **Compiling**
-After cloning this repo, load the cuda module (`module load cuda`) and then `make`.
+After cloning this repo, load the cuda module (`module load cuda`) and then `make`.<br>
 NOTE: For SummitDev use `make -f Makefile.SummitDev`
 
 **Running**
