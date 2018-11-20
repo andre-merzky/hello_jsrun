@@ -1,10 +1,10 @@
-/****************************
+/**********************************************************
 
-Test for jsrun layout
+"Hello World"-type program to test different jsrun layouts.
 
 Written by Tom Papatheodore
 
-*****************************/
+**********************************************************/
 
 #include <stdlib.h>
 #include <stdio.h>
