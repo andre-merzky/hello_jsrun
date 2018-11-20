@@ -15,7 +15,7 @@ Now you can test different layouts using `jsrun`. Also, you might want to pipe y
 
 $ `jsrun -n6 -a1 -c7 -g1 -bpacked:2 ./hello_jsrun | sort`
 ```
-\*\*\* MPI Ranks: 6, OpenMP Threads: 2, GPUs per Resource Set: 1 \*\*\*  
+*** MPI Ranks: 6, OpenMP Threads: 2, GPUs per Resource Set: 1 ***  
 
 MPI Rank 000, OMP_thread 00 on HWThread 000 of Node a09n13 - RT_GPU_id 0 : GPU_id 0  
 MPI Rank 000, OMP_thread 01 on HWThread 004 of Node a09n13 - RT_GPU_id 0 : GPU_id 0   
