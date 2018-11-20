@@ -14,7 +14,7 @@ After compiling, you can grab an interactive job (1 or more nodes) with the foll
 Now you can test different layouts using `jsrun`. Also, you might want to pipe your results to `sort` to make the output easier to parse. For example
 
 $ `jsrun -n6 -a1 -c7 -g1 -bpacked:2 ./hello_jsrun | sort`
-
+```
 \*\*\* MPI Ranks: 6, OpenMP Threads: 2, GPUs per Resource Set: 1 \*\*\*  
 
 MPI Rank 000, OMP_thread 00 on HWThread 000 of Node a09n13 - RT_GPU_id 0 : GPU_id 0  
@@ -29,7 +29,7 @@ MPI Rank 004, OMP_thread 00 on HWThread 116 of Node a09n13 - RT_GPU_id 0 : GPU_i
 MPI Rank 004, OMP_thread 01 on HWThread 120 of Node a09n13 - RT_GPU_id 0 : GPU_id 4  
 MPI Rank 005, OMP_thread 00 on HWThread 144 of Node a09n13 - RT_GPU_id 0 : GPU_id 5  
 MPI Rank 005, OMP_thread 01 on HWThread 148 of Node a09n13 - RT_GPU_id 0 : GPU_id 5 
-  
+```
 If you pass `verbose` as a command line argument to the executable, you can see the DomainID, BusID, and UUID of each GPU as well:  
   
 $ `jsrun -n6 -a1 -c7 -g1 -bpacked:2 ./hello_jsrun verbose | sort`
