@@ -12,6 +12,7 @@ Written by Tom Papatheodore
 #include <sched.h>
 #include <nvml.h>
 #include <omp.h>
+#include <unistd.h>
 
 int main(int argc, char *argv[]){
 
@@ -50,7 +51,13 @@ int main(int argc, char *argv[]){
 		else{
 			strcpy(output_flag, argv[1]);
 		}
-	}
+    }
+
+    int delay = 0;
+    if(argc > 2){ 
+        delay = atoi(argv[2]);
+    }
+
 
 	int hwthread;
 	int num_threads = 0;
@@ -65,6 +72,8 @@ int main(int argc, char *argv[]){
 		printf("########################################################################\n");
 		printf("\n*** MPI Ranks: %d, OpenMP Threads: %d, GPUs per Resource Set: %d ***\n", size, num_threads, num_devices);
 		printf("========================================================================\n");
+        
+        sleep(delay);
 	}
 	MPI_Barrier(MPI_COMM_WORLD);
 
